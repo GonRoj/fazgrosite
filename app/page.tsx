@@ -49,7 +49,7 @@ export default function LandingPage() {
           </div>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-6 items-center">
-            <Link href="#about" className="text-sm font-medium text-[#888] hover:text-[#4cbb16]">
+            <Link href="#inicio" className="text-sm font-medium text-[#888] hover:text-[#4cbb16]">
               Inicio
             </Link>
             <Link href="#services" className="text-sm font-medium text-[#888] hover:text-[#4cbb16]">
@@ -146,11 +146,10 @@ export default function LandingPage() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-white">
-                    Streamline your workflow, amplify your productivity
+                    Agilice su flujo de trabajo y amplifique su productividad
                   </h1>
                   <p className="max-w-[600px] text-[#888] md:text-xl">
-                    The all-in-one platform that helps teams manage projects, automate workflows, and collaborate
-                    seamlessly.
+                    La plataforma todo en uno que ayuda a los equipos a gestionar proyectos, automatizar flujos de trabajo y colaborar sin problemas.
                   </p>
                 </div>
                 {/* CTA Buttons */}
@@ -167,17 +166,7 @@ export default function LandingPage() {
                     </Link>
                   </Button>
                 </div>
-                {/* Social Proof */}
-                <div className="flex items-center space-x-4 text-sm">
-                  <div className="flex -space-x-2">
-                    {[1, 2, 3, 4].map((i) => (
-                      <div key={i} className="inline-block h-8 w-8 rounded-full bg-[#0A0A0A] ring-2 ring-black" />
-                    ))}
-                  </div>
-                  <div className="text-[#888]">
-                    Join over <span className="font-medium text-white">2,000+</span> teams already growing
-                  </div>
-                </div>
+                
               </div>
               {/* Hero Image */}
               <Image
@@ -458,38 +447,179 @@ export default function LandingPage() {
         </section>
         {/* ========== CONTACT SECTION: END ========== */}
 
-        {/* ========== CTA SECTION: BEGIN ========== */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-black">
+        {/* ========== CTA PARTNERSHIP: BEGIN ========== */}
+        <section className="w-full py-12 bg-black overflow-hidden">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              {/* CTA Content */}
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-white">
-                  Ready to streamline your workflow?
-                </h2>
-                <p className="max-w-[600px] text-[#888] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Join thousands of teams already using FazGro to boost their productivity.
-                </p>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
+              <div className="inline-block rounded-lg bg-green-900/30 px-3 py-1 text-sm text-green-400">
+                Partners
+                </div>
+              <h2 className="text-2xl font-bold tracking-tighter md:text-3xl text-white">
+                Alguno de nuestros partners
+                <br />
+                <br />
+              </h2>
+            </div>
+            
+            <div className="relative">
+              {/* Gradient overlays for smooth scroll effect */}
+              <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-black to-transparent z-10"></div>
+              <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-black to-transparent z-10"></div>
+              
+              {/* Logos container with continuous scroll animation */}
+              <div className="flex animate-scroll">
+                {/* First set of logos */}
+                <div className="flex">
+                  <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/lenovo.png"
+                      alt="Lenovo"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                   <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/dell.png"
+                      alt="/Dell"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/hp.png"
+                      alt="HP"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                   <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/fortinet-1.png"
+                      alt="Fortinet"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/asus.png"
+                      alt="asus"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/samsung.png"
+                      alt="samsung"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/brother.png"
+                      alt="brother"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/lynksys.png"
+                      alt="lynksys"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/hyperx.png"
+                      alt="hyperx"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/zotac.png"
+                      alt="zotac"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/microsoft.png"
+                      alt="microsoft"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/sophos.png"
+                      alt="sophos"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/mcafee.png"
+                      alt="mcafee"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/kaspersky.png"
+                      alt="kaspersky"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                  <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/symantec.png"
+                      alt="symantec"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                     <div className="flex-shrink-0 mx-4">
+                    <Image
+                      src="/vscode.png"
+                      alt="Visual Studio Code"
+                      width={100}
+                      height={50}
+                      className="h-8 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all"
+                    />
+                  </div>
+                </div>
               </div>
-              {/* CTA Buttons */}
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-black">
-                  <Link href="#" className="px-8">
-                    Start your free trial
-                  </Link>
-                </Button>
-                <Button variant="outline" asChild size="lg" className="border-[#222] text-green-400 hover:bg-[#0A0A0A]">
-                  <Link href="#" className="px-8">
-                    Schedule a demo
-                  </Link>
-                </Button>
-              </div>
-              {/* Trial Info */}
-              <p className="text-xs text-[#888]">No credit card required. 14-day free trial.</p>
             </div>
           </div>
         </section>
-        {/* ========== CTA SECTION: END ========== */}
+        {/* ========== CTA PARTNERSHIP: END ========== */}
       </main>
 
       {/* ========== FOOTER: BEGIN ========== */}
