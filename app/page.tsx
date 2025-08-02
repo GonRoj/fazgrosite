@@ -725,7 +725,7 @@ function TestimonialsCarousel() {
       content:
         "The document management system is exceptional. Being able to collaborate on files in real-time with version control has eliminated confusion and rework.",
     },
-  ]
+  ] as const
 
   const [currentIndex, setCurrentIndex] = useState(0)
 
