@@ -170,8 +170,8 @@ export default function LandingPage() {
               </div>
               {/* Hero Image */}
               <Image
-                src="/placeholder.svg?height=550&width=550"
-                width={550}
+                src="/hero.jpg?height=550&width=550"
+                width={600}
                 height={550}
                 alt="Product screenshot"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
@@ -240,7 +240,6 @@ export default function LandingPage() {
                     Supply of reliable hardware and software from trusted brands, with specialized consulting.
                     <br />
                     <br />
-                
                   </CardDescription>
                 </CardHeader>
               </Card>
