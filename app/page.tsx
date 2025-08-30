@@ -36,15 +36,15 @@ export default function LandingPage() {
       {/* ========== HEADER: BEGIN ========== */}
       <header className="sticky top-0 z-50 w-full border-b border-[#111] bg-black/90 backdrop-blur 
       supports-[backdrop-filter]:bg-black/80 border-b-4">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-15 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
             <Image
               src="/logo.png"
               alt="FazGro Solutions"
-              width={160}
-              height={50}
-              className="h-12 w-auto"
+              width={150}
+              height={70}
+              className="mt-5 mb-5"
             />
           </div>
           {/* Desktop Navigation */}
@@ -81,9 +81,9 @@ export default function LandingPage() {
                     <Image
                       src="/logo.png"
                       alt="FazGro Solutions"
-                      width={160}
+                      width={130}
                       height={50}
-                      className="h-12 w-auto"
+                      className="mt-3 mb-3"
                     />
                   </div>
                 </div>
@@ -630,11 +630,11 @@ export default function LandingPage() {
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <Image
-                  src="/logo.png"
-                  alt="FazGro Solutions"
-                  width={140}
-                  height={45}
-                  className="h-11 w-auto"
+                   src="/logo.png"
+                   alt="FazGro Solutions"
+                   width={130}
+                   height={50}
+              className="mt-3 mb-3"
                 />
               </div>
        {/* Social Links */}
