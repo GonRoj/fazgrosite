@@ -638,7 +638,7 @@ export default function LandingPage() {
                 />
               </div>
        {/* Social Links */}
-              <div className="flex gap-4">
+              <div className="flex gap-9 ">
                 <Link href="#" className="text-[#888] hover:text-white">
                   <Twitter className="h-5 w-5" />
                   <span className="sr-only">Twitter</span>
